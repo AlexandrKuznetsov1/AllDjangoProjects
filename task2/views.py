@@ -1,8 +1,11 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
 
-def pattern_class(request):
-    return render(request, 'class_template.html')
+
+
+class pattern_class(TemplateView):
+    template_name = 'class_template.html'
 
 
 def pattern_func(request):
