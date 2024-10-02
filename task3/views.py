@@ -7,7 +7,15 @@ class myplatform(TemplateView):
 
 
 def shop(request):
-    return render(request, 'my_shop.html')
+    text1 = "Комплект снастей для рыбалки"
+    text2 = "Лодка резиновая"
+    text3 = "Костюм рыболова"
+    context = {
+        "text1": text1,
+        "text2": text2,
+        "text3": text3,
+    }
+    return render(request, 'my_shop.html', context)
 
 
 def basket(request):
