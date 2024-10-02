@@ -2,8 +2,6 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 
 
-
-
 class pattern_class(TemplateView):
     template_name = 'class_template.html'
 
