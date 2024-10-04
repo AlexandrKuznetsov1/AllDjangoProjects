@@ -17,8 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import pattern_class, pattern_func
-from task3.views import shop, basket
-from task3.views import myplatform
+from task4.views import shop, basket
+from task4.views import myplatform
 
 urlpatterns = [
     path('admin/', admin.site.urls),
