@@ -12,7 +12,6 @@ def shop(request):
             "Комплект снастей для рыбалки", "Лодка резиновая", "Костюм рыболова"
         ],
     }
-
     return render(request, 'my_shop.html', context)
 
 
